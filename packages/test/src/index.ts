@@ -1,5 +1,6 @@
 // import * as xrpl from "xrpl";
 import * as codec from "ripple-binary-codec";
+// import * as bigInt from "big-integer";
 
 const { Amount } = codec[`coreTypes`]
 
@@ -9,11 +10,17 @@ const a = Amount.from({
   issuer: `r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59`,
 })
 
-console.log(a.toBytes())
-console.log(a.toHex())
-console.log(a.toString())
 console.log(a.toJSON())
 
-const b = Amount.from("123.11/AAA/r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59")
+// const b = Amount.from({
+//   value: 1e-1,
+//   currency: `005841551A748AD2C1F76FF6ECB0CCCD00000000`,
+//   issuer: `r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59`,
+// })
 
-console.log(b)
+// console.log(b.toJSON())
+
+const c = Amount.from(1e-1)
+c;
+console.log(444)
+// console.log(c.toJSON())
