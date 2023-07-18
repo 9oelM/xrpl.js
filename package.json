@@ -16,7 +16,8 @@
     "ripple-address-codec": "file:packages/ripple-address-codec",
     "ripple-binary-codec": "file:packages/ripple-binary-codec",
     "ripple-keypairs": "file:packages/ripple-keypairs",
-    "xrpl": "file:packages/xrpl"
+    "xrpl": "file:packages/xrpl",
+    "test": "file:packages/test"
   },
   "devDependencies": {
     "@types/brorand": "^1.0.30",

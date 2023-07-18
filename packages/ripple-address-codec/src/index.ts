@@ -40,6 +40,9 @@ function encodeXAddress(
     // RIPEMD160 is 160 bits = 20 bytes
     throw new Error('Account ID must be 20 bytes')
   }
+
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-expect-error
   if (tag > MAX_32_BIT_UNSIGNED_INT) {
     throw new Error('Invalid tag')
   }
