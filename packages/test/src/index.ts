@@ -13,3 +13,7 @@ console.log(a.toBytes())
 console.log(a.toHex())
 console.log(a.toString())
 console.log(a.toJSON())
+
+const b = Amount.from("123.11/AAA/r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59")
+
+console.log(b)

@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node dist/npm/index.js",
+    "start": "nodemon dist/npm/index.js",
     "build": "tsc --build tsconfig.build.json",
+    "build:watch": "tsc --build tsconfig.build.json --watch",
     "webpack": "webpack --mode=development"
   },
   "keywords": [],
@@ -19,6 +20,7 @@
     "xrpl": "2.9.0"
   },
   "devDependencies": {
+    "nodemon": "^3.0.1",
     "ts-loader": "^9.4.4",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6",
